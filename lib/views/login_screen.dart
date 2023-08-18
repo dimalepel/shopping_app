@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/views/forgot_screen.dart';
 import 'package:shopping_app/views/signup_screen.dart';
 
 import 'home_screen.dart';
@@ -47,7 +48,7 @@ class LoginScreen extends StatelessWidget {
                     Align(
                       alignment: Alignment.bottomRight,
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotScreen())),
                         child: const Text(
                           'Forgot Password',
                           style: TextStyle(

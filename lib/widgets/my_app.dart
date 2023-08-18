@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/views/signup_screen.dart';
+
+import '../views/login_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
           primary: const Color.fromARGB(255, 250, 85, 35),
         )
       ),
-      home: const SignupScreen(),
+      home: const LoginScreen(),
     );
   }
 }
