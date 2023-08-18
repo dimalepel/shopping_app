@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/home_screen.dart';
+import 'package:shopping_app/views/onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -14,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    //Timer(Duration(seconds: 3), () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),)));
+    Timer(Duration(seconds: 3), () => Navigator.push(context, MaterialPageRoute(builder: (context) => OnboardingScreen(),)));
   }
 
   @override
@@ -37,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Icon(
               Icons.fastfood,
               size: 200,
-              color: Color.fromARGB(255, 255, 125, 85),
+              color: Color.fromARGB(255, 250, 85, 35),
             ),
             SizedBox(
               height: 40,
