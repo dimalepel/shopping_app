@@ -5,9 +5,11 @@ import 'package:shopping_app/views/home_screen.dart';
 class OnboardingScreen extends StatelessWidget {
   final introKey = GlobalKey<IntroductionScreenState>();
 
+  OnboardingScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    final pageDecoration = PageDecoration(
+    const pageDecoration = PageDecoration(
       titleTextStyle: TextStyle(
         fontSize: 28,
         fontWeight: FontWeight.bold
@@ -45,21 +47,21 @@ class OnboardingScreen extends StatelessWidget {
             image: Image.asset('assets/images/splash3.png', width: 300,),
             decoration: pageDecoration,
             footer: Padding(
-              padding: EdgeInsets.only(left: 15, right: 15, top: 30),
+              padding: const EdgeInsets.only(left: 15, right: 15, top: 30),
               child: ElevatedButton(
-                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen())),
-                child: Text(
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(55),
+                  backgroundColor: const Color.fromARGB(255, 250, 85, 35),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)
+                  )
+                ),
+                child: const Text(
                   'Let\'s Shop',
                   style: TextStyle(
                     fontSize: 18
                   ),
-                ),
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size.fromHeight(55),
-                  backgroundColor: Color.fromARGB(255, 250, 85, 35),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8)
-                  )
                 ),
               ),
             )
@@ -68,14 +70,14 @@ class OnboardingScreen extends StatelessWidget {
       showSkipButton: false,
       showDoneButton: false,
       showBackButton: true,
-      back: Text(
+      back: const Text(
         'Back',
         style: TextStyle(
           fontWeight: FontWeight.w600,
           color: Color.fromARGB(255, 250, 85, 35),
         ),
       ),
-      next: Text(
+      next: const Text(
         'Next',
         style: TextStyle(
           fontWeight: FontWeight.w600,
@@ -83,11 +85,11 @@ class OnboardingScreen extends StatelessWidget {
         ),
       ),
       dotsDecorator: DotsDecorator(
-        size: Size.square(10),
-        activeSize: Size(20, 10),
-        activeColor: Color.fromARGB(255, 250, 85, 35),
+        size: const Size.square(10),
+        activeSize: const Size(20, 10),
+        activeColor: const Color.fromARGB(255, 250, 85, 35),
         color: Colors.grey,
-        spacing: EdgeInsets.symmetric(horizontal: 3),
+        spacing: const EdgeInsets.symmetric(horizontal: 3),
         activeShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25),
         )
