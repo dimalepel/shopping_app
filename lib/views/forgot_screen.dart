@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/recovery_screen.dart';
+import 'package:shopping_app/views/signup_screen.dart';
+
+import 'otp_screen.dart';
 
 class ForgotScreen extends StatefulWidget {
   const ForgotScreen({super.key});
@@ -88,6 +91,24 @@ class _ForgotScreenState extends State<ForgotScreen> {
                   ),
                 ),
               ),
+              const SizedBox(height: 20),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Or'.toUpperCase()),
+                  TextButton(
+                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OTPScreen())),
+                    child: const Text(
+                      'Verify Using Number',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Color.fromARGB(255, 250, 85, 35),
+                          fontWeight: FontWeight.w500
+                      ),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
