@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:shopping_app/views/home_screen.dart';
 import 'package:shopping_app/views/onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () => Navigator.push(context, MaterialPageRoute(builder: (context) => OnboardingScreen(),)));
+    Timer(const Duration(seconds: 3), () => Navigator.push(context, MaterialPageRoute(builder: (context) => OnboardingScreen(),)));
   }
 
   @override
@@ -24,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.black,
           image: DecorationImage(
             image: AssetImage('assets/images/splash_food.jpg'),
@@ -35,17 +34,17 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
+            const Icon(
               Icons.fastfood,
               size: 200,
               color: Color.fromARGB(255, 250, 85, 35),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Text(
               'Flutter Food'.toUpperCase(),
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
