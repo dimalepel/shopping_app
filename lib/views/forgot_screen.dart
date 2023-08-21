@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/recovery_screen.dart';
-import 'package:shopping_app/views/signup_screen.dart';
 
 import 'otp_screen.dart';
 
