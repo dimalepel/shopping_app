@@ -49,7 +49,7 @@ class OnboardingScreen extends StatelessWidget {
             footer: Padding(
               padding: const EdgeInsets.only(left: 15, right: 15, top: 30),
               child: ElevatedButton(
-                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen())),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size.fromHeight(55),
                   backgroundColor: const Color.fromARGB(255, 250, 85, 35),
