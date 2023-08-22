@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/onboarding_screen.dart';
 
+import '../theme/app_colors.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -23,9 +25,9 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        decoration: const BoxDecoration(
-          color: Colors.black,
-          image: DecorationImage(
+        decoration: BoxDecoration(
+          color: AppColors.black,
+          image: const DecorationImage(
             image: AssetImage('assets/images/splash_food.jpg'),
             fit: BoxFit.cover,
             opacity: 0.4,
@@ -34,18 +36,18 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
+            Icon(
               Icons.fastfood,
               size: 200,
-              color: Color.fromARGB(255, 250, 85, 35),
+              color: AppColors.orange,
             ),
             const SizedBox(
               height: 40,
             ),
             Text(
               'Flutter Food'.toUpperCase(),
-              style: const TextStyle(
-                color: Colors.white,
+              style: TextStyle(
+                color: AppColors.white,
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic

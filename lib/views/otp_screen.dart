@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/otp_verify_screen.dart';
 
+import '../theme/app_colors.dart';
+
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});
 
@@ -8,8 +10,8 @@ class OTPScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        foregroundColor: Colors.black,
+        backgroundColor: AppColors.transparent,
+        foregroundColor: AppColors.black,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -48,7 +50,7 @@ class OTPScreen extends StatelessWidget {
                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OTPVeifyScreen())),
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(55),
-                    backgroundColor: const Color.fromARGB(255, 250, 85, 35),
+                    backgroundColor: AppColors.orange,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8)
                     )

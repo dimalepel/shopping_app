@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/theme/app_colors.dart';
 import 'package:shopping_app/views/recovery_screen.dart';
 
 import 'otp_screen.dart';
@@ -18,9 +19,9 @@ class _ForgotScreenState extends State<ForgotScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: AppColors.transparent,
         elevation: 0,
-        foregroundColor: Colors.black,
+        foregroundColor: AppColors.black,
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -65,10 +66,10 @@ class _ForgotScreenState extends State<ForgotScreen> {
                           emailController.clear();
                         });
                       },
-                      child: const Icon(
+                      child: Icon(
                         Icons.close,
                         size: 14,
-                        color: Color(0xffdb3022),
+                        color: AppColors.red,
                       )
                     )
                 ),
@@ -78,7 +79,7 @@ class _ForgotScreenState extends State<ForgotScreen> {
                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const RecoveryScreen())),
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(55),
-                    backgroundColor: const Color.fromARGB(255, 250, 85, 35),
+                    backgroundColor: AppColors.orange,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8)
                     )
@@ -97,11 +98,11 @@ class _ForgotScreenState extends State<ForgotScreen> {
                   Text('Or'.toUpperCase()),
                   TextButton(
                     onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OTPScreen())),
-                    child: const Text(
+                    child: Text(
                       'Verify Using Number',
                       style: TextStyle(
                           fontSize: 16,
-                          color: Color.fromARGB(255, 250, 85, 35),
+                          color: AppColors.orange,
                           fontWeight: FontWeight.w500
                       ),
                     ),

@@ -2,6 +2,7 @@ import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.da
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/home_screen.dart';
 import 'package:shopping_app/views/profile_screen.dart';
+import '../theme/app_colors.dart';
 import 'cart_screen.dart';
 import 'favorites_screen.dart';
 
@@ -45,7 +46,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
       bottomNavigationBar: AnimatedBottomNavigationBar.builder(
         itemCount: pages.length,
         tabBuilder: (int index, bool isActive) {
-          final color = isActive ? const Color.fromARGB(255, 250, 85, 35) : Colors.grey;
+          final color = isActive ? AppColors.orange : AppColors.grey;
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

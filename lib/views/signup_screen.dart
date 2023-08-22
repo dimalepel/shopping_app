@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/login_screen.dart';
 
+import '../theme/app_colors.dart';
 import 'home_screen.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -83,7 +84,7 @@ class SignupScreen extends StatelessWidget {
                       onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size.fromHeight(55),
-                          backgroundColor: const Color.fromARGB(255, 250, 85, 35),
+                          backgroundColor: AppColors.orange,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)
                           )
@@ -101,21 +102,21 @@ class SignupScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
+                        Text(
                           'Already Have an Account?',
                           style: TextStyle(
                               fontSize: 16,
-                              color: Colors.grey,
+                              color: AppColors.grey,
                               fontWeight: FontWeight.w500
                           ),
                         ),
                         TextButton(
                           onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen())),
-                          child: const Text(
+                          child: Text(
                             'Log In',
                             style: TextStyle(
                                 fontSize: 16,
-                                color: Color.fromARGB(255, 250, 85, 35),
+                                color: AppColors.orange,
                                 fontWeight: FontWeight.w500
                             ),
                           ),
