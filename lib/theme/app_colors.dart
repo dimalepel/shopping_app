@@ -11,4 +11,6 @@ abstract class AppColors {
   static Color white = Colors.white;
   static Color amber = Colors.amber;
   static Color grey = const Color(0xffA5A9B2);
+  static Color altWhite = Colors.white70;
+  static Color redAccent = Colors.redAccent;
 }

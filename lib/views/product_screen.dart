@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:shopping_app/theme/app_colors.dart';
+import 'package:shopping_app/widgets/product_details_popup.dart';
 
 class ProductScreen extends StatefulWidget {
   const ProductScreen({super.key});
@@ -120,8 +121,9 @@ class _ProductScreenState extends State<ProductScreen> {
                         ),
                       ),
                     ),
+                    ProductDetailsPopUp(),
                   ],
-                )
+                ),
               ],
             ),
           ),

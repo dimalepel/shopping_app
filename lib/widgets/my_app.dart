@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/navigation_screen.dart';
+import 'package:shopping_app/views/onboarding_screen.dart';
+import 'package:shopping_app/views/splash_screen.dart';
 
 import '../views/login_screen.dart';
 
