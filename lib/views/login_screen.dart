@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping_app/views/forgot_screen.dart';
 import 'package:shopping_app/views/signup_screen.dart';
 
+import '../theme/app_colors.dart';
 import 'home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -49,11 +50,11 @@ class LoginScreen extends StatelessWidget {
                       alignment: Alignment.bottomRight,
                       child: TextButton(
                         onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotScreen())),
-                        child: const Text(
+                        child: Text(
                           'Forgot Password',
                           style: TextStyle(
                               fontSize: 16,
-                              color: Color.fromARGB(255, 250, 85, 35),
+                              color: AppColors.orange,
                               fontWeight: FontWeight.w500
                           ),
                         ),
@@ -66,7 +67,7 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
                       style: ElevatedButton.styleFrom(
                           minimumSize: const Size.fromHeight(55),
-                          backgroundColor: const Color.fromARGB(255, 250, 85, 35),
+                          backgroundColor: AppColors.orange,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)
                           )
@@ -84,21 +85,21 @@ class LoginScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
+                        Text(
                           'Don\'t Have an Account?',
                           style: TextStyle(
                               fontSize: 16,
-                            color: Colors.grey,
+                            color: AppColors.grey,
                             fontWeight: FontWeight.w500
                           ),
                         ),
                         TextButton(
                           onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupScreen())),
-                          child: const Text(
+                          child: Text(
                             'Sign Up',
                             style: TextStyle(
                                 fontSize: 16,
-                                color: Color.fromARGB(255, 250, 85, 35),
+                                color: AppColors.orange,
                                 fontWeight: FontWeight.w500
                             ),
                           ),

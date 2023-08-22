@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shopping_app/views/recovery_screen.dart';
 import 'package:sms_otp_auto_verify/sms_otp_auto_verify.dart';
 
+import '../theme/app_colors.dart';
+
 class OTPVeifyScreen extends StatefulWidget {
   const OTPVeifyScreen({super.key});
 
@@ -14,7 +16,7 @@ class _OTPVeifyScreenState extends State<OTPVeifyScreen> {
 
   BoxDecoration get _pinPutDecoration {
     return BoxDecoration(
-      border: Border.all(color: Theme.of(context).primaryColor),
+      border: Border.all(color: AppColors.orange),
       borderRadius: BorderRadius.circular(10.0),
     );
   }
@@ -23,8 +25,8 @@ class _OTPVeifyScreenState extends State<OTPVeifyScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        foregroundColor: Colors.black,
+        backgroundColor: AppColors.transparent,
+        foregroundColor: AppColors.black,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -62,7 +64,7 @@ class _OTPVeifyScreenState extends State<OTPVeifyScreen> {
                   textStyle: const TextStyle(fontSize: 20),
                   defaultDecoration: _pinPutDecoration.copyWith(
                       border: Border.all(
-                        color: Colors.grey,
+                        color: AppColors.grey,
                       )
                   ),
                   selectedDecoration: _pinPutDecoration,
@@ -76,7 +78,7 @@ class _OTPVeifyScreenState extends State<OTPVeifyScreen> {
                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const RecoveryScreen())),
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(55),
-                    backgroundColor: const Color.fromARGB(255, 250, 85, 35),
+                    backgroundColor: AppColors.orange,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8)
                     )

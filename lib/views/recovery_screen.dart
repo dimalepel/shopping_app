@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_colors.dart';
 import 'home_screen.dart';
 
 class RecoveryScreen extends StatefulWidget {
@@ -14,9 +15,9 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: AppColors.transparent,
         elevation: 0,
-        foregroundColor: Colors.black,
+        foregroundColor: AppColors.black,
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -64,7 +65,7 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(55),
-                    backgroundColor: const Color.fromARGB(255, 250, 85, 35),
+                    backgroundColor: AppColors.orange,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8)
                     )

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/views/product_screen.dart';
+
+import '../theme/app_colors.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -66,22 +69,22 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: 50,
                       width: MediaQuery.of(context).size.width / 1.5,
                       decoration: BoxDecoration(
-                        color: Colors.black12.withOpacity(0.05),
+                        color: AppColors.lightGrey,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: TextFormField(
                         style: const TextStyle(
                             fontSize: 20
                         ),
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                             floatingLabelBehavior: FloatingLabelBehavior.never,
                             prefixIcon: Icon(
                               Icons.search,
                               size: 25,
-                              color: Color.fromARGB(255, 250, 85, 35),
+                              color: AppColors.orange,
                             ),
                             border: InputBorder.none,
-                            label: Text(
+                            label: const Text(
                               'Find your product',
                             )
                         ),
@@ -91,14 +94,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: 50,
                       width: MediaQuery.of(context).size.width / 6,
                       decoration: BoxDecoration(
-                        color: Colors.black12.withOpacity(0.05),
+                        color: AppColors.lightGrey,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Center(
+                      child: Center(
                         child: Icon(
                           Icons.notifications,
                           size: 25,
-                          color: Color.fromARGB(255, 250, 85, 35),
+                          color: AppColors.orange,
                         ),
                       ),
                     ),
@@ -111,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 150,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    color: const Color(0xfffff0dd),
+                    color: AppColors.peach,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Image.asset('assets/images/freed.png'),
@@ -130,15 +133,15 @@ class _HomeScreenState extends State<HomeScreen> {
                             margin: const EdgeInsets.all(8),
                             padding: const EdgeInsets.only(left: 15, right: 15),
                             decoration: BoxDecoration(
-                              color: Colors.black12.withOpacity(0.05),
+                              color: AppColors.lightGrey,
                               borderRadius: BorderRadius.circular(20)
                             ),
                             child: Center(
                               child: FittedBox(
                                 child: Text(
                                   tabs[index],
-                                  style: const TextStyle(
-                                    color: Colors.black38,
+                                  style: TextStyle(
+                                    color: AppColors.darkGrey,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16
                                   ),
@@ -171,7 +174,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: Stack(
                                 children: [
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProductScreen()));
+                                    },
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
                                       child: Image.asset(
@@ -189,13 +194,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                       height: 30,
                                       width: 30,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: AppColors.white,
                                         borderRadius: BorderRadius.circular(4)
                                       ),
-                                      child: const Center(
+                                      child: Center(
                                         child: Icon(
                                           Icons.favorite,
-                                          color: Color.fromARGB(255, 250, 85, 35)
+                                          color: AppColors.orange
                                         ),
                                       ),
                                     ),
@@ -228,15 +233,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                   const SizedBox(height: 10,),
                                   Row(
                                     children: [
-                                      const Icon(Icons.star, color: Colors.amber,size: 22,),
+                                      Icon(
+                                        Icons.star,
+                                        color: AppColors.amber,
+                                        size: 22,
+                                      ),
                                       Text('(${reviews[index].toString()})'),
                                       const SizedBox(width: 10,),
                                       Text(
                                         '\$${prices[index].toString()}',
-                                        style: const TextStyle(
+                                        style: TextStyle(
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
-                                            color: Color.fromARGB(255, 250, 85, 35)
+                                            color: AppColors.orange
                                         ),
                                       ),
                                     ],
@@ -280,7 +289,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: Stack(
                                 children: [
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProductScreen()));
+                                    },
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
                                       child: Image.asset(
@@ -298,13 +309,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                       height: 30,
                                       width: 30,
                                       decoration: BoxDecoration(
-                                          color: Colors.white,
+                                          color: AppColors.white,
                                           borderRadius: BorderRadius.circular(4)
                                       ),
-                                      child: const Center(
+                                      child: Center(
                                         child: Icon(
                                             Icons.favorite,
-                                            color: Color.fromARGB(255, 250, 85, 35)
+                                            color: AppColors.orange
                                         ),
                                       ),
                                     ),
@@ -323,15 +334,19 @@ class _HomeScreenState extends State<HomeScreen> {
                             const SizedBox(height: 10,),
                             Row(
                               children: [
-                                const Icon(Icons.star, color: Colors.amber,size: 22,),
+                                Icon(
+                                  Icons.star,
+                                  color: AppColors.amber,
+                                  size: 22,
+                                ),
                                 Text('(${reviews[index].toString()})'),
                                 const SizedBox(width: 10,),
                                 Text(
                                   '\$${prices[index].toString()}',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 250, 85, 35)
+                                      color: AppColors.orange
                                   ),
                                 ),
                               ],
