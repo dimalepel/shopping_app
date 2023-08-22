@@ -13,4 +13,6 @@ abstract class AppColors {
   static Color grey = const Color(0xffA5A9B2);
   static Color altWhite = Colors.white70;
   static Color redAccent = Colors.redAccent;
+  static Color green = Colors.green;
+  static Color indigo = Colors.indigo;
 }

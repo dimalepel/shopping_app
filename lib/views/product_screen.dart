@@ -121,7 +121,7 @@ class _ProductScreenState extends State<ProductScreen> {
                         ),
                       ),
                     ),
-                    ProductDetailsPopUp(),
+                    const ProductDetailsPopUp(),
                   ],
                 ),
               ],

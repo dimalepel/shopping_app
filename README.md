@@ -10,7 +10,7 @@
 * [x] OTP Auth Screen UI Design in Flutter Ep. 5
 * [x] Dynamic Bottom Navigation Bar in Flutter Ep. 6
 * [x] Home Screen UI Design in Flutter Ep. 7
-* [ ] Product Screen UI Design in Flutter Ep. 8
+* [x] Product Screen UI Design in Flutter Ep. 8
 * [ ] Cart Screen UI Design in Flutter Ep. 9
 * [ ] Payment Method Screen UI Design in Flutter Ep. 10
 * [ ] Shipping Address Screen UI Design in Flutter Ep. 11
