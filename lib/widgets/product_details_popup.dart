@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/views/navigation_screen.dart';
 import 'package:shopping_app/widgets/container_button_modal.dart';
 
 import '../theme/app_colors.dart';
@@ -151,7 +152,9 @@ class _ProductDetailsPopUpState extends State<ProductDetailsPopUp> {
                   ),
                   const SizedBox(height: 20,),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationScreen(pageId: 1)));
+                    },
                     child: ContainerButtonModal(
                       containerWidth: MediaQuery.of(context).size.width,
                       iText: 'Checkout',
