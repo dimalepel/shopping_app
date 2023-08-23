@@ -12,7 +12,7 @@
 * [x] Home Screen UI Design in Flutter Ep. 7
 * [x] Product Screen UI Design in Flutter Ep. 8
 * [x] Cart Screen UI Design in Flutter Ep. 9
-* [ ] Payment Method Screen UI Design in Flutter Ep. 10
+* [x] Payment Method Screen UI Design in Flutter Ep. 10
 * [ ] Shipping Address Screen UI Design in Flutter Ep. 11
 * [ ] Confirm Order Screen UI Design in Flutter Ep. 12
 * [ ] Order Success Screen UI Design in Flutter Ep. 13

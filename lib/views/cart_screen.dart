@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/views/payment_method_screen.dart';
 import 'package:shopping_app/widgets/container_button_modal.dart';
 
 import '../theme/app_colors.dart';
@@ -183,7 +184,9 @@ class _CartScreenState extends State<CartScreen> {
               ),
               const SizedBox(height: 20,),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentMethodScreen()));
+                },
                 child: ContainerButtonModal(
                   iText: 'Checkout',
                   containerWidth: MediaQuery.of(context).size.width,
