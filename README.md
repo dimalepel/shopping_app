@@ -11,7 +11,7 @@
 * [x] Dynamic Bottom Navigation Bar in Flutter Ep. 6
 * [x] Home Screen UI Design in Flutter Ep. 7
 * [x] Product Screen UI Design in Flutter Ep. 8
-* [ ] Cart Screen UI Design in Flutter Ep. 9
+* [x] Cart Screen UI Design in Flutter Ep. 9
 * [ ] Payment Method Screen UI Design in Flutter Ep. 10
 * [ ] Shipping Address Screen UI Design in Flutter Ep. 11
 * [ ] Confirm Order Screen UI Design in Flutter Ep. 12

@@ -14,5 +14,6 @@ abstract class AppColors {
   static Color altWhite = Colors.white70;
   static Color redAccent = Colors.redAccent;
   static Color green = Colors.green;
+  static Color greenAccent = Colors.greenAccent;
   static Color indigo = Colors.indigo;
 }
