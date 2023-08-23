@@ -7,14 +7,23 @@ import 'cart_screen.dart';
 import 'favorites_screen.dart';
 
 class NavigationScreen extends StatefulWidget {
-  const NavigationScreen({super.key});
+  final int pageId;
+
+  const NavigationScreen({super.key, required this.pageId});
 
   @override
   State<NavigationScreen> createState() => _NavigationScreenState();
 }
 
 class _NavigationScreenState extends State<NavigationScreen> {
-  int pageIndex = 0;
+  late int pageIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    pageIndex = widget.pageId;
+  }
+
   List<Widget> pages = [
     const HomeScreen(),
     const CartScreen(),

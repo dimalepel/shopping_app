@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/views/navigation_screen.dart';
-import 'package:shopping_app/views/onboarding_screen.dart';
-import 'package:shopping_app/views/splash_screen.dart';
-
-import '../views/login_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,7 +15,7 @@ class MyApp extends StatelessWidget {
           primary: const Color.fromARGB(255, 250, 85, 35),
         )
       ),
-      home: const NavigationScreen(),
+      home: const NavigationScreen(pageId: 0,),
     );
   }
 }
