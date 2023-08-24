@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/views/home_screen.dart';
+import 'package:shopping_app/views/order_confirm_screen.dart';
 import 'package:shopping_app/widgets/container_button_modal.dart';
 
 import '../theme/app_colors.dart';
@@ -75,7 +75,7 @@ class ShippingAddressScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 30,),
                 InkWell(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OrderConfirmScreen())),
                   child: ContainerButtonModal(
                     iText: 'Add Address',
                     containerWidth: MediaQuery.of(context).size.width,
