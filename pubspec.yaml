@@ -40,6 +40,7 @@ dependencies:
   animated_bottom_navigation_bar: ^1.2.0
   fan_carousel_image_slider: ^0.1.2
   flutter_rating_bar: ^4.0.1
+  flutter_native_splash: ^2.3.2
 
 dev_dependencies:
   flutter_test:
@@ -92,3 +93,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_native_splash:
+  android: true
+
+  background_image: "assets/images/background.png"
