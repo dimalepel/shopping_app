@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:shopping_app/views/home_screen.dart';
+import 'package:shopping_app/views/login_screen.dart';
 
 import '../theme/app_colors.dart';
 
@@ -51,7 +51,7 @@ class OnboardingScreen extends StatelessWidget {
             footer: Padding(
               padding: const EdgeInsets.only(left: 15, right: 15, top: 30),
               child: ElevatedButton(
-                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen())),
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size.fromHeight(55),
                   backgroundColor: AppColors.orange,

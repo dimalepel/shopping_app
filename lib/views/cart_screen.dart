@@ -112,7 +112,7 @@ class _CartScreenState extends State<CartScreen> {
                           children: [
                             Icon(
                               Icons.remove,
-                              color: AppColors.green,
+                              color: AppColors.orange,
                             ),
                             const SizedBox(
                               width: 10,
@@ -129,7 +129,7 @@ class _CartScreenState extends State<CartScreen> {
                             ),
                             Icon(
                               Icons.add,
-                              color: AppColors.green,
+                              color: AppColors.orange,
                             ),
                           ],
                         ),
@@ -185,7 +185,7 @@ class _CartScreenState extends State<CartScreen> {
               const SizedBox(height: 20,),
               InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentMethodScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const PaymentMethodScreen()));
                 },
                 child: ContainerButtonModal(
                   iText: 'Checkout',

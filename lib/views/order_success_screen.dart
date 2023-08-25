@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shopping_app/views/navigation_screen.dart';
 import 'package:shopping_app/widgets/container_button_modal.dart';
 
+import '../theme/app_colors.dart';
+
 class OrderSuccessScreen extends StatelessWidget {
   const OrderSuccessScreen({super.key});
 
@@ -18,8 +20,8 @@ class OrderSuccessScreen extends StatelessWidget {
               'assets/images/check.png',
               width: 250,
             ),
-            SizedBox(height: 20,),
-            Text(
+            const SizedBox(height: 20,),
+            const Text(
               'Success!',
               style: TextStyle(
                 fontSize: 25,
@@ -27,8 +29,8 @@ class OrderSuccessScreen extends StatelessWidget {
                 letterSpacing: 1
               ),
             ),
-            SizedBox(height: 20,),
-            Text(
+            const SizedBox(height: 20,),
+            const Text(
               'Your order will be delivered soon.',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -37,8 +39,8 @@ class OrderSuccessScreen extends StatelessWidget {
                   letterSpacing: 1
               ),
             ),
-            SizedBox(height: 5,),
-            Text(
+            const SizedBox(height: 5,),
+            const Text(
               'Thank You! For choosing our app.',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -47,12 +49,12 @@ class OrderSuccessScreen extends StatelessWidget {
                   letterSpacing: 1
               ),
             ),
-            SizedBox(height: 40,),
+            const SizedBox(height: 40,),
             InkWell(
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => NavigationScreen(pageId: 0))),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationScreen(pageId: 0))),
               child: ContainerButtonModal(
                 iText: 'Continue Shopping',
-                bgColor: Colors.orange,
+                bgColor: AppColors.orange,
                 containerWidth: MediaQuery.of(context).size.width,
               ),
             )
