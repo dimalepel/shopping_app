@@ -175,7 +175,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   InkWell(
                                     onTap: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProductScreen()));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ProductScreen()));
                                     },
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
@@ -290,7 +290,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   InkWell(
                                     onTap: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProductScreen()));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ProductScreen()));
                                     },
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),

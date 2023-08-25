@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/views/order_success_screen.dart';
 import 'package:shopping_app/views/payment_method_screen.dart';
 import 'package:shopping_app/views/shipping_address_screen.dart';
 
@@ -281,7 +282,7 @@ class OrderConfirmScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 40,),
                 InkWell(
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ShippingAddressScreen())),
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OrderSuccessScreen())),
                   child: ContainerButtonModal(
                     iText: 'Confirm Order',
                     bgColor: AppColors.orange,

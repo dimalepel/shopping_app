@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
         decoration: BoxDecoration(
           color: AppColors.black,
           image: const DecorationImage(
-            image: AssetImage('assets/images/splash_food.jpg'),
+            image: AssetImage('assets/images/splash_shop.jpg'),
             fit: BoxFit.cover,
             opacity: 0.4,
           )
@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.fastfood,
+              Icons.shopping_bag,
               size: 200,
               color: AppColors.orange,
             ),
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 40,
             ),
             Text(
-              'Flutter Food'.toUpperCase(),
+              'Flutter Shop App'.toUpperCase(),
               style: TextStyle(
                 color: AppColors.white,
                 fontSize: 40,

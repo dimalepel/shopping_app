@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/views/navigation_screen.dart';
 
 import '../theme/app_colors.dart';
-import 'home_screen.dart';
 
 class RecoveryScreen extends StatefulWidget {
   const RecoveryScreen({super.key});
@@ -62,7 +62,7 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationScreen(pageId: 0))),
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size.fromHeight(55),
                     backgroundColor: AppColors.orange,
